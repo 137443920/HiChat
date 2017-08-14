@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chat room</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+<!-- <input type="button" name="" value="send" id="sendBtn"> -->
+
+<div id="main">
+	<h1>HiChat:)</h1>
+	<span id="usersCount"></span>
+	<div id="show"></div>
+	<form>
+		<input type="color" name="" id="colorStyle" class="Btn">
+		<input type="button" name="" value="表情" id="emojiBtn" class="Btn">
+		<input type="file" name="" value="image" id="sendImg" class="Btn">
+		<input type="button" name="" value="清除聊天记录" id="clearBtn" class="Btn"><br>
+		<textarea cols="60" rows="4" id="messageInput"></textarea>
+		<input type="button" name="" value="发送" id="sendBtn" class="Btn">
+		<div id="emojiWrapper"></div>
+	</form>
+</div>
+
+<div id="loginWrapper">
+	<p id="info">connecting to a server...</p>
+	<div id="nickName">
+		<input type="text" name="" placeholder="nickName" id="nickNameInput">
+		<input type="button" name="" value="登录" id="loginBtn">
+	</div>
+</div>
+
+<script type="text/javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="script/hiChat.js"></script>
+<script type="text/javascript">
+	 // var socket = io.connect(),//与服务器建立连接
+	 // 	 button = document.getElementById('sendBtn');
+	 // button.onclick = function(){
+	 // 	socket.emit('foo','hello');//发送一个名为foo的事件，并且传递一个字符串数据'hello'
+	 // }
+</script>
+</body>
+</html>
