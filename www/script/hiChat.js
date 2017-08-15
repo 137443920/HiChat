@@ -58,6 +58,8 @@ socket.on('nickExisted',function(){
 socket.on('longinSuccess',function(){
 	$('#loginWrapper').css('display','none');
 	$('#messageInput').focus();
+	$('#emojiBtn').click();//登录成功加载表情
+	$('#emojiWrapper').css('display','none');//隐藏表情
 })
 
 //system提示
