@@ -16,7 +16,7 @@ app.use('/',express.static(__dirname+'/www'))//指定静态html文件的位置
 //所有人发送该事件，另外，上面代码中，io表示服务器整个socket连接，所以代码io.sockets.emit('foo')
 //表示所有人都可以收到该事件。
 server.listen(process.env.PORT||8080);
-io.socket.on('connection',function(socket){
+io.sockets.on('connection',function(socket){
 	//接受并处理客户端发送的foo事件
 	socket.on('foo',function(data){
 		console.log(data)
