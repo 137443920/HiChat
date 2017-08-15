@@ -55,5 +55,5 @@ io.on('connection',function(socket){
 	})
 })
 
-server.listen($PORT);
+server.listen(process.env.PORT||8000);
 console.log('server running...')
