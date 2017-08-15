@@ -17,7 +17,7 @@ body{background-color: #eee;}
 #emojiWrapper {
     display: none;
     width: 500px;
-    bottom: 105px;
+    top: 295px;
     position: absolute;
     background-color: #aaa;
     box-shadow: 0 0 10px #555;
